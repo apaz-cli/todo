@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!bin/python3
 from flask import Flask, request, abort
 from threading import Lock
 from pickle import dumps, loads
