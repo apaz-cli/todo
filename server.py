@@ -45,6 +45,9 @@ def todo_set(user_id, list):
 @app.route('/', methods=['GET'])
 def get_todo_list():
     user_id = request.headers.get('X-User-ID')
+    if not user_id:
+        print("Could not read username.")
+        return None
     return todo_get(user_id)
 
 @app.route('/', methods=['POST'])

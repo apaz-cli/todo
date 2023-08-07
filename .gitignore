@@ -1,4 +1,3 @@
-
 *
 !README.md
 !.gitignore
@@ -6,3 +5,4 @@
 !client.py
 !requirements.txt
 !install.sh
+!serve.sh

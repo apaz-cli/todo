@@ -3,7 +3,7 @@ import subprocess
 
 
 USER_ID = "Violet"
-SERVER_URL = "http://127.0.0.1:5000"
+SERVER_URL = "http://todo.apaz.dev:5000"
 
 
 def read_todo_list():
