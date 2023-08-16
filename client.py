@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 import subprocess
+import os
 
 
 USER_ID = "Violet"
@@ -47,7 +48,8 @@ def edit_todo_list():
         with open("todo_tmp.txt", "w") as file:
             file.write(todo_list)
 
-        subprocess.run(["nano", "todo_tmp.txt"])
+        editor = os.getenv("EDITOR", "nano")
+        subprocess.run([editor, "todo_tmp.txt"])
 
         with open("todo_tmp.txt", "r") as file:
             edited_list = file.read()
